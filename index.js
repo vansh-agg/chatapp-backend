@@ -34,6 +34,9 @@ io.on('connection', (socket) => {
     })
 
 })
+app.get('/', (req, res) => {
+    res.send('working fine')
+})
 server.listen(PORT, () => {
     console.log("server running")
 })
